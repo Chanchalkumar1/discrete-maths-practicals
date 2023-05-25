@@ -1,0 +1,17 @@
+#include <iostream>
+#include <unordered_set>
+using namespace std;
+int main() {
+    
+    std::unordered_set<int> a = { 1, 2, 3, 4, 5 };
+    int key = 5;
+    
+    if (a.find(key) != a.end()) {
+        std::cout << "true" << std::endl;
+    }
+    else {
+        std::cout << "false" << std::endl;
+    }
+
+    return 0;
+}
